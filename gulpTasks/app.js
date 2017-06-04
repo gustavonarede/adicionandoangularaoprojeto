@@ -24,7 +24,7 @@ gulp.task('app.js', function(){
  gulp.src('app/**/*.js')
   .pipe(babel({ presets: [ 'es2017']}))
   .pipe(uglify())
-  .pipe(concat('appp.min.js'))
+  .pipe(concat('app.min.js'))
   .pipe(gulp.dest('public/assets/js'))
 })
 
